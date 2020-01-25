@@ -1,27 +1,163 @@
+ <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Single page theme - Dimension</title>
+<head>
+<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body>
 
-    <!-- AnyMod -->
-    <script id="AnyMod-script">
-      (function (m,o,d,u,l,a,r,i,z,e) {
-        u[m]={Project:o,rq:[],Opts:r,ready:function(j){u[m].rq.push(j)}};function j(s){return encodeURIComponent(btoa(s))};z=l.getElementById(m+'-'+a);r=u.location;
-        e=[d+'/page/'+o+'/'+j(r.pathname)+'/'+j(r.host)+'?t='+Date.now(),d];e.map(function(w){i=l.createElement(a);i.defer=1;i.src=w;z.parentNode.insertBefore(i,z);});
-      })('AnyMod','86MNP3','https://cdn.anymod.com/v2',window,document,'script',{ toolkit: true, tips: true, priority: 3 });
+<section class="hero">
+
+    <div class="hero-content">
+    
+       <h1 class="hero-title">
+            Sigrid & Knut
+       </h1>
+         
+       <h2 class="hero-subtitle">
+         21.-23. august 2020 <br/>
+         Bjorholmen & Hesnes, Tvedestrand
+            
+       </h2>         
+       <button type="button" class="hero-button" onclick="location.href='#hva'">
+            Hva er greien?
+       </button>
+       <button type="button" class="hero-button" onclick="location.href='#praktisk'">
+            Praktisk
+       </button>
+       <button type="button" class="hero-button" onclick="location.href='#annet'">
+            Annet
+       </button>
+
+       <button type="button" class="hero-button" onclick="location.href='#kontakt'">
+            Kontakt
+       </button>
+        
+    
+    </div>
+
+</section>
+
+<main>
+  <section>
+    <a name="hva"></a>
+    <H1>
+      Hva er greien?
+    </H1>
+    <div class="hovedseksjon">
+      <div class="hovedtekst">
+        eque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      </div>
+      <div class="infoboks">
+        <H2>
+          Tidsskjema
+        </H2>
+        <li>
+          13. august: Vi åpner kl 17:00
+        <li>
+          14. august: festen starter kl 15:00
+        </li>
+        <li>
+          15. august: vi må være vasket ut av seilerhytta kl 14:00
+        </li>
+        
+          
+      </div>
+    </div>
+    <div class="seksjonsfot" id="hytter">
+      <div class="hytte">
+        <H1>
+        Den røde
+        </H1>
+        <img src="bilder/adele.jpg" alt="den røde">
+        <br/>
+        Den røde hytten har rom til 10.
+      </div>
+      <div class="hytte">
+        <H1>
+        Den hvite
+        </H1>
+        <img src="bilder/adele.jpg" alt="den hvite">
+        <br/>
+        Den hvite hytten har rom til 8.
+      </div>
+      <div class="hytte">
+        <H1>        
+          Gjeldes anneks
+        </H1>
+        <img src="bilder/adele.jpg" alt="Gjeldes anneks">
+        <br/>        
+        Gjeldes anneks har rom til 5.
+      </div>
+      <div class="hytte">
+        <H1>
+          Seilerhytten
+        </H1>
+        <img src="bilder/adele.jpg" alt="Seilerhytten">
+        <br/>
+        Seilerhytten har rom til 12.
+      </div>
+    </div>
+  </section>
+  <section>
+    <a name="hvor"></a>
+    <H1>
+      Hvor det er og hvordan du kommer deg dit
+    </H1>
+    <H2> 
+      Hvor er det?
+    </H2>
+    <p> Det er her:</p>
+    <div id="map"></div>
+<!--
+    <script>
+      var map;
+      function initMap() {
+      var seilerhytta = {lat: 58.568164, lng: 9.016248};
+      var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 11, center: seilerhytta});
+      var marker = new google.maps.Marker({position: seilerhytta, map: map});
+      }
     </script>
-    <!-- /AnyMod -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm8GRGZpk8AkFc6GV9Imo15sTyB7wP7B4&callback=initMap"
+    async defer></script>
+-->
+   <H2>
+     Hvordan kommer jeg med dit...
+   </H2>
+   <H3>
+     ...fra Oslo?
+   </H3>
+   <H3>
+     ...fra Bergen?
+   </H3>
+   
+   
+  </section>
 
-  </head>
-  <body>
+  <section>
+    <a name="praktisk"></a>
+    <H1>
+      Når
+    </H1>
+  </section>
+
+  <section>
+    <a name="annet"></a>
+    <H1>
+      Pakke- og spilleliste
+    </H1>
+    <iframe src="https://open.spotify.com/embed/playlist/1j45au6fQvg7vTxrGWlDHz" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+    </iframe>
+  </section> 
+  <section>  
+    <a name="kontakt"></a>
+    <H1>
+      Kontakt
+    </H1>
+  </section>
+
+</main>
 
 
-    <!-- Hero with CTA -->
-    <div id="anymod-dklbml"></div>
-
-    <!-- Google Map with Marker -->
-    <div id="anymod-almnko"></div>
-
-  </body>
-</html>
+</body>
+</html> 

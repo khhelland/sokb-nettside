@@ -1,0 +1,117 @@
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Simplifica", sans-serif;
+
+}
+
+
+.hero {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.hero::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url(bilder/grill-sv.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   filter: brightness(60%);
+}
+.hero-content {
+   position: relative;
+/*   font-family: "Simplifica", sans-serif;*/
+   text-transform: uppercase;
+   color: white;
+   text-align: center;
+   margin: 0.625rem;
+}
+.hero-title {
+   font-size: 3rem;
+   font-weight: 200;
+   margin-bottom: 3rem;
+}
+.hero-subtitle {
+   font-size: 2rem;
+   font-weight: 200;
+   margin-top: 1rem;
+}
+.hero-button {
+   background-color: #000000;
+   color: white;
+   border: 0.15rem solid #7a7a7a;
+   margin: 5rem 1rem;
+   text-transform: uppercase;
+   padding: 1.5rem 1.8rem;
+ /*  font-family: "Simplifica", sans-serif;*/
+   font-size: 1.5rem;
+   font-weight: 200;
+   cursor: pointer;
+}
+.hero-button:hover {
+   background-color: #ffef40;
+   color: black;
+   border: 1px solid #db7598;
+}
+
+#map {
+    height: 50vh;
+  }
+/*
+main > section:nth-of-type(odd) {
+    background: #ffef40;
+}
+main > section:nth-of-type(even) {
+    background: #cccccc;
+}
+*/
+section {
+    margin: 0;
+}
+
+.hovedseksjon {
+  width: 100%;
+  display: flex;
+}
+
+.infoboks {
+    background-color: #c3d4d4;
+    border: .3em solid #6F8181;
+    border-radius: .5em;
+    width: 100%
+}
+
+#hytter {
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.seksjonsfot {
+    background:#C597A3;
+}
+
+.hytte {
+    border: .3em solid #A45D6F;
+    border-radius: .5em;
+    background-color:#DABDC4;
+    margin: 1% 1%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}    
+.hytte img {
+    width: auto;
+    height: 100%;
+}
