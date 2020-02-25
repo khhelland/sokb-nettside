@@ -1,4 +1,15 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+:root {
+  --farge-0: white;
+  --farge-1: gray;
+  --farge-2: yellow;
+  --farge-3: blue;
+}
 body {
    margin: 0;
    padding: 0;
@@ -34,27 +45,29 @@ body {
    text-transform: uppercase;
    color: white;
    text-align: center;
-   margin: 0.625rem;
+   margin: /*0.625*/0.1rem;
 }
 .hero-title {
-   font-size: 3rem;
-   font-weight: 200;
-   margin-bottom: 3rem;
-}
-.hero-subtitle {
    font-size: 2rem;
    font-weight: 200;
-   margin-top: 1rem;
+   margin-bottom: 2rem;
+   padding-top: 5rem;
 }
+.hero-subtitle {
+   font-size: 1rem;
+   font-weight: 200;
+   margin-top: 2rem;
+}
+/*
 .hero-button {
-   background-color: #000000;
+   background-color: var(--farge-0);
    color: white;
    border: 0.15rem solid #7a7a7a;
-   margin: 5rem 1rem;
+   margin: 2rem 0.5rem;
    text-transform: uppercase;
    padding: 1.5rem 1.8rem;
- /*  font-family: "Simplifica", sans-serif;*/
-   font-size: 1.5rem;
+ /*  font-family: "Simplifica", sans-serif;
+   font-size: 1rem;
    font-weight: 200;
    cursor: pointer;
 }
@@ -63,9 +76,12 @@ body {
    color: black;
    border: 1px solid #db7598;
 }
+*/
+
 
 #map {
     height: 50vh;
+    width: 100%;
   }
 /*
 main > section:nth-of-type(odd) {
@@ -77,34 +93,44 @@ main > section:nth-of-type(even) {
 */
 section {
     margin: 0;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hovedseksjon {
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .infoboks {
-    background-color: #c3d4d4;
-    border: .3em solid #6F8181;
+    background-color: var(--farge-3);
+    border: .3em solid;
+    border-filter: brightness(75%)
     border-radius: .5em;
     width: 100%
 }
 
 #hytter {
     display: flex;
-    justify-content: space-between;
-    height: 40vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*height: 60vh;*/
 }
 
 .seksjonsfot {
-    background:#C597A3;
+    background: var(--farge-2);
+    
 }
 
 .hytte {
-    border: .3em solid #A45D6F;
+    border: .3em solid var(--farge-2);
+    border-filter: brightness(50&);
     border-radius: .5em;
-    background-color:#DABDC4;
+    background-color:#ffef40;
     margin: 1% 1%;
     height: 90%;
     align-items: center;
@@ -112,6 +138,89 @@ section {
     flex-direction: column;
 }    
 .hytte img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
+
+.hovedtekst {
+    margin: 0% 5%;
+}
+
+
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#page-nav {
+  width: 100%;
+  background: #454545;
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+/*
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  transform-origin: 0% 0%;
+  
+ transform: translate(100%, 0);
+ 
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ */ 
+}
+
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+}
+
+/* Menu Items */
+#page-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+#page-nav ul li {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    color: #ffffff;
+    /*background: #a02620;*/
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+  }
+  #page-nav ul li {
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+    transform: none;
+  }
+}
+
+
+
