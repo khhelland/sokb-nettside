@@ -8,21 +8,6 @@
 </head>
 <body>
 
- <!-- [NAVIGATION BAR] -->
-    <nav id="page-nav">
-      <!-- [THE HAMBURGER] -->
-      <label for="hamburger">&#9776;</label>
-      <input type="checkbox" id="hamburger"/>
-
-      <!-- [MENU ITEMS] -->
-
-      <ul>
-        <li><a href="#hva">Hva er greia?</a></li>
-        <li><a href="#praktisk">Praktisk</a></li>
-        <li><a href="#annet">Annet</a></li>
-        <li> <a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
 
 
 
@@ -38,183 +23,14 @@
          
        <h2 class="hero-subtitle">
          21.-23. august 2020 <br/>
-         Bjorholmen & Hesnes, Tvedestrand          
+         Bjorholmen & Hesnes, Tvedestrand <br/>
+         Mer info kommer
        </h2>         
 
-
-<!--
-       <button type="button" class="hero-button" onclick="location.href='#hva'">
-            Hva er greien?
-       </button>
-       <button type="button" class="hero-button" onclick="location.href='#praktisk'">
-            Praktisk
-       </button>
-       <button type="button" class="hero-button" onclick="location.href='#annet'">
-            Annet
-       </button>
-
-       <button type="button" class="hero-button" onclick="location.href='#kontakt'">
-            Kontakt
-       </button>
--->        
     
     </div>
 
-</section>
 
-<main>
-  <section>
-    <a name="hva"></a>
-    <H1>
-      Hva er greien?
-    </H1>
-    <div class="hovedseksjon">
-      <div class="hovedtekst">
-        <p>
-        Det som skjer er at vi skal gifte oss. Selve seremonien blir i Oslo rådhus 15. august, men vi vil gjerne feire oss selv flere ganger og med akkurat dere, så vi inviterer derfor til bryllupsfest på Sørlandet helgen etter! 
-        </p>
-        <p>
-          Knut sin familie har to hytter ved siden av hverandre på Borøya utenfor Tvedestrand, og vi har klart å skrape sammen 35 sengeplasser for anledningen. Selve festen på lørdagen blir på Seilerhytta som ligger på en egen holme like ved de andre hyttene. 
-        </p>
-        Hvis det blir dårlig vær blir det skikkelig trangt og skikkelig koselig, og hvis det blir bra vær blir det skikkelig mye plass og skikkelig koselig. 
-        <p>
-          Vi håper dere har lyst til å ta turen og feire sammen med oss! 
-        </p>
-      </div>
-      <div class="infoboks">
-        <H2>
-          Tidsskjema
-        </H2>
-        <li>
-          13. august: Vi åpner kl 17:00
-        <li>
-          14. august: festen starter kl 15:00
-        </li>
-        <li>
-          15. august: vi må være vasket ut av seilerhytta kl 14:00
-        </li>
-        
-          
-      </div>
-    </div>
-    <div class="seksjonsfot" id="hytter">
-      <div class="hytte">
-        <H1>
-        Den røde
-        </H1>
-        <img src="bilder/rod.jpg" alt="den røde">
-        <br/>
-        Denne hytta eies av Knut sin mor og har 10 sengeplasser. Den har et eget anneks og veldig mange fine små plattinger som egner seg godt til soling og lesing og sånt. Denne hytta har nylig fått oppvaskmaskin. 
-      </div>
-      <div class="hytte">
-        <H1>
-        Den hvite
-        </H1>
-        <img src="bilder/adele.jpg" alt="den hvite">
-        <br/>
-        Denne hytta eies av Knut sin tante. Den er veldig fresh og moderne og har hatt oppvaskmaskin lenge. Bak den kan vi finne de luneste sitteplassene. Hytta har 8 sengeplasser. Den hvite og røde hytta deler brygge med stupebrett. 
-      </div>
-      <div class="hytte">
-        <H1>        
-          Gjeldes anneks
-        </H1>
-        <img src="bilder/gjelde.jpg" alt="Gjeldes anneks">
-        <br/>        
-        I dette hyggelige annekset er det 5 sengeplasser. Noe særlig mer vet vi for øyeblikket ikke.
-      </div>
-      <div class="hytte">
-        <H1>
-          Seilerhytten
-        </H1>
-        <img src="bilder/seilerhytta.jpg" alt="Seilerhytta">
-        <br/>
-        Denne hytta eies av DNT og ligger på Bjorholmen. Her er det 12 sengeplasser og dobbelutedo. Det er ikke innlagt vann. For å komme hit må man bruke båt eller svømme. 
-      </div>
-    </div>
-    På alle hyttene blåser det mye, det er superfin utsikt og nærhet til bading.
-  </section>
-  <section>
-    <a name="hvor"></a>
-    <H1>
-      Hvor det er og hvordan du kommer deg dit
-    </H1>
-    <H2> 
-      Hvor er det?
-    </H2>
-    <p> Det er her:</p>
-    <div id="map"></div>
-
-    <script>
-      var map;
-      function initMap() {
-      var seilerhytta = {lat: 58.568164, lng: 9.016248};
-      var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 11, center: seilerhytta});
-      var marker = new google.maps.Marker({position: seilerhytta, map: map});
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm8GRGZpk8AkFc6GV9Imo15sTyB7wP7B4&callback=initMap"
-    async defer></script>
-
-   <H2>
-     Hvordan kommer jeg med dit...
-   </H2>
-   <H3>
-     ...fra Oslo?
-   </H3>
-   <H3>
-     ...fra Bergen?
-   </H3>   
-  </section>
-
-  <section>
-    <a name="praktisk"></a>
-    <H1>
-      Når
-    </H1>
-  </section>
-
-  <section>
-    <a name="annet"></a>
-    <H1>
-      Pakke- og spilleliste
-    </H1>
-    <iframe src="https://open.spotify.com/embed/playlist/1j45au6fQvg7vTxrGWlDHz" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
-    </iframe>
-    <H1>
-      Ønskeliste
-      </H1>
-        <iframe  src="https://www.youtube.com/embed/V4-bVADLVAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section> 
-  <section>  
-    <a name="kontakt"></a>
-    <H1>
-      Kontakt
-    </H1>
-    <form name="svar" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>   
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-        </select></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
-
-  </section>
-
-</main>
 
 
 </body>
