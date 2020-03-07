@@ -40,23 +40,6 @@
          21.-23. august 2020 <br/>
          Bjorholmen & Hesnes, Tvedestrand          
        </h2>         
-
-
-<!--
-       <button type="button" class="hero-button" onclick="location.href='#hva'">
-            Hva er greien?
-       </button>
-       <button type="button" class="hero-button" onclick="location.href='#praktisk'">
-            Praktisk
-       </button>
-       <button type="button" class="hero-button" onclick="location.href='#annet'">
-            Annet
-       </button>
-
-       <button type="button" class="hero-button" onclick="location.href='#kontakt'">
-            Kontakt
-       </button>
--->        
     
     </div>
 
@@ -209,13 +192,31 @@
       </li>
 
       <li>
-        <label for="svar">Hvor mange kommer: </label>
-        <select name="svar[]" id="svar">
+        <label for="antall">Hvor mange kommer: </label>
+        <ul name="antall" id="antall" class="seg-radio">
+          <li>
+            <input type="radio" id="0" name="antall" value="0">
+            <label for="0">0</label>
+          </li>
+          
+          <li>
+            <input type="radio" id="1" name="antall" value="1" checked>
+            <label for="1">1</label>
+          </li>
+          
+          <li>
+            <input type="radio" id="2" name="antall" value="2">
+            <label for="2">2</label>
+          </li>
+        </ul>
+<!--        <label for="antall">Hvor mange kommer: </label>
+        <select name="antall" id="antall">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
 
         </select>
+-->
       </li>
       <li>
         <label for="mat"> Matpreferanser eller allergier?</label>
