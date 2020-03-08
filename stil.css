@@ -7,9 +7,10 @@
 
 :root {
   --farge-0: white;
-  --farge-1: gray;
-  --farge-2: yellow;
-  --farge-3: blue;
+  --farge-1: #aac1ad;
+  --farge-2: #6db096;
+  --farge-3: #f3c5f8;
+  --farge-4:#eb7bcd;
 
   --font-fam-1: "Simplifica", sans-serif;
 }
@@ -17,7 +18,6 @@ body {
    margin: 0;
    padding: 0;
    font-family: var(--font-fam-1);
-
 }
 
 
@@ -80,23 +80,66 @@ section {
     min-height:100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+/*    justify-content: space-between;*/
     width: 100%;
+}
+
+section:not(.hero) {
+
+    padding: 2rem 5% 0rem;
 }
 
 .hovedseksjon {
   width: 100%;
   display: flex;
   flex-direction: column;
+/*  padding: 0% 2%;*/
 }
+
+section > h1 {
+    font-size: 1.5rem;
+    
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+section  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
 
 .infoboks {
     background-color: var(--farge-3);
-    border: .3em solid;
-    border-filter: brightness(75%)
+ /*   border: .3em solid;
+    border-filter: brightness(80%)
     border-radius: .5em;
-    width: 100%
+*/
+    width: 100%;
+    margin: 5% 0%;
+    padding:1rem;
+    font-size: 0.8rem;
+             
 }
+
+.infoboks h1 {
+
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#kleskode {
+    font-size: 1rem;
+}
+
+#pakkeliste{
+    font-size: 1rem;
+    background-color: var(--farge-1);
+}
+
 
 #hytter {
     /*
@@ -113,26 +156,32 @@ section {
 
 
 .hytte {
-    border: .3em solid var(--farge-2);
-    border-filter: brightness(50%);
-    border-radius: .5em;
-    background-color:var(--farge-3);
+
+    background-color:var(--farge-1);
     margin: 1% 1%;
     /*height: 90%;*/
     align-items: center;
     display: flex;
     flex-direction: column;
     max-width:500px;
+    padding: 1rem;
 
-}    
+}
+
+.hytte h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+    
 .hytte img {
     width: 100%;
     height: auto;
+    margin-bottom: 1rem;
 }
 
-.hovedtekst {
-    margin: 0% 5%;
-}
+
 
 
 /* [ON BIG SCREEN] */
@@ -316,3 +365,6 @@ form button {
     display: block;
 }
 
+iframe {
+    margin: 2rem 0rem;
+}
