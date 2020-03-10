@@ -87,6 +87,8 @@ section {
 section:not(.hero) {
 
     padding: 2rem 5% 0rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .hovedseksjon {
