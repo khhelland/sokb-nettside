@@ -39,7 +39,6 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-   filter: brightness(60%);
 }
 .hero-content {
    position: relative;
@@ -125,7 +124,7 @@ section  h2 {
     max-width:500px;
     margin: 5% 1%;
     padding:1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
              
 }
 
@@ -135,14 +134,6 @@ section  h2 {
     text-decoration: underline;
 }
 
-#kleskode {
-    font-size: 1rem;
-}
-
-#pakkeliste{
-    font-size: 1rem;
-    background-color: var(--farge-1);
-}
 
 
 .seksjonsfot {
