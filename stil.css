@@ -1,5 +1,4 @@
 * {
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -58,7 +57,7 @@ body {
 }
 .hero-subtitle {
    font-size: 1rem;
-s   font-weight: 200;
+   font-weight: 200;
    margin-top: 2rem;
 }
 
