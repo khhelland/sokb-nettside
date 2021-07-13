@@ -111,9 +111,9 @@ section  h2 {
 }
 
 
-figure img{
+img{
   width: 100%;
-  display: inline;
+  height: auto;
 }
 
 
